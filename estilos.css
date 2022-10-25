@@ -1,0 +1,262 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.contenedor {
+  display: flex;
+  max-width: 100%;
+  height: 80vh;
+  background-image: url(banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.contenedor .wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+.contenedor .wrap .box {
+  flex-basis: 50%;
+  color: #fff;
+  text-align: left;
+  align-self: center;
+}
+.contenedor .wrap .box span {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.contenedor .wrap .box h1 {
+  font-size: 32px;
+  line-height: 0.9;
+  padding-bottom: 10px;
+}
+.contenedor .wrap .box p {
+  font-size: 15px;
+  line-height: 1.2;
+}
+.contenedor .wrap .box .botones {
+  display: flex;
+  margin-top: 30px;
+  flex-flow: row wrap;
+}
+.contenedor .wrap .box .botones .btn1 {
+  flex-basis: 30%;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+}
+
+.contenedor .wrap .box .botones .btn1:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Container {
+  width: 85%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+
+.cards {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 2);
+}
+
+.imagen-section {
+  height: 750px;
+  background-color: black;
+}
+
+.cards .img-one {
+  background-image: url(Guitarra1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-two {
+  background-image: url(guitarra2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-three {
+  background-image: url(guitarra3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Content {
+  padding: 15px 10px;
+  text-align: center;
+}
+.Content h2 {
+  letter-spacing: 1.5px;
+}
+.Content p {
+  margin: 15px 0px;
+  font-size: 15px;
+}
+.Content a {
+  text-decoration: none;
+  flex-basis: 30%;
+  border: solid 2px;
+  border-radius: 20px;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 8px 15px;
+}
+.Content a:hover {
+  background-color: grey;
+  color: beige;
+  transition: 1s ease;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .titulo-seccion {
+  color: black;
+  justify-content: center;
+}
+
+footer .copy {
+  color: black;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales i {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.buttom-primary {
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.buttom-primary:hover {
+  background-color: rgba(41, 39, 39, 0.3);
+}
+
+.iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.animated {
+  position: relative;
+  animation-name: btn-animated;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes btn-animated {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 5px;
+  }
+  50% {
+    top: 10px;
+  }
+  75% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.footer-border {
+  border-top: 1px solid black;
+  width: 400px;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.footer-img {
+  width: 160px;
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    height: 150px;
+  }
+  .footer-border {
+    width: 100px;
+  }
+  .footer-img {
+    width: 60px;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
